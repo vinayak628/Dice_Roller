@@ -1,3 +1,5 @@
+
+import pyttsx3
 import random
 
 def die_rollor():
@@ -11,6 +13,9 @@ def die_rollor():
                 |  *  |
                 |     |
                 -------""")
+        engine=pyttsx3.init()
+        engine.say("its a one")
+        engine.runAndWait()
     elif roll==2:
         print("""
                 -------
@@ -19,6 +24,9 @@ def die_rollor():
                 |    *|
                 -------
               """)
+        engine=pyttsx3.init()
+        engine.say("its a two")
+        engine.runAndWait()
     elif roll==3:
         print("""
                 -------
@@ -27,6 +35,9 @@ def die_rollor():
                 |    *|
                 -------
               """)
+        engine=pyttsx3.init()
+        engine.say("its a three")
+        engine.runAndWait()
     elif roll==4:
         print("""
                 -------
@@ -35,6 +46,9 @@ def die_rollor():
                 |*   *|
                 -------
               """)
+        engine=pyttsx3.init()
+        engine.say("its a four")
+        engine.runAndWait()
     elif roll==5:
         print("""
                 -------
@@ -43,6 +57,9 @@ def die_rollor():
                 |*   *|
                 -------
               """)
+        engine=pyttsx3.init()
+        engine.say("its a five")
+        engine.runAndWait()
     else:
         print("""
                 -------
@@ -51,6 +68,9 @@ def die_rollor():
                 |*   *|
                 -------
               """)
+        engine=pyttsx3.init()
+        engine.say("its a six")
+        engine.runAndWait()
 
 def main():
     die_rollor()
